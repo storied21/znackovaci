@@ -1,0 +1,39 @@
+
+           {
+            "owners": [
+                {
+               "Jmeno":"Pavel",
+               "Prijmeni":"Pav",
+               "Adresa":"Praha 13000",
+               "Zaver":
+               "Vas telefon je v poradku"
+                   }, {
+               "Jmeno":"Sara",
+               "Prijmeni":"Stara",
+               "Adresa":"Praha 12000",
+               "Zaver":
+               "Vas telefon je v poradku"
+                   }, {
+               "Jmeno":"Dominik",
+               "Prijmeni":"Otto",
+               "Adresa":"Brno 22000",
+               "Zaver":
+               "Nutna vymena nekterych dilu"
+                   }, {
+               "Jmeno":"Ondrej",
+               "Prijmeni":"Cisler",
+               "Adresa":"Praha 12000",
+               "Zaver":
+               "Nutna vymena nekterych dilu"
+                   },
+               {
+                "Jmeno":"Lukas",
+                "Prijmeni":"Rotbauer",
+                "Prijmeni":"Praha 16000",
+                "Zaver":
+                 "Vas telefon je v poradku"
+                }
+             ]
+            }
+            
+    

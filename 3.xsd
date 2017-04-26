@@ -1,0 +1,292 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+    <xs:simpleType name="ok_no">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="ok|no"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="on_off">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="on|off"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="hodnoceni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="nefunguje|spatne|stredni|normalne|dobre|super"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="volume">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="zatizeni">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="450"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="kamera">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+     <xs:simpleType name="predni_kamera">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+   <xs:element name="mobilni_pohotovost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="owner" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="owner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:string"/>
+        <xs:element ref="mobil"/>
+        <xs:element ref="zakaznik"/>
+        <xs:element ref="analiza"/>
+        <xs:element name="konecne_hodnoceni" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="mobil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="m_nazev" type="xs:string"/>
+        <xs:element name="m_rok" type="xs:string"/>
+        <xs:element name="m_barva" type="xs:string"/>
+        <xs:element name="m_vaha" type="xs:string"/>
+        <xs:element name="m_rozliseni_displeje" type="xs:string"/>
+        <xs:element name="m_velikost_displeje" type="xs:string"/>
+        <xs:element name="m_RAM" type="xs:string"/>
+        <xs:element name="m_kamera" type="xs:string"/>
+        <xs:element name="m_frekvence_procesoru" type="xs:string"/>
+        <xs:element name="m_jader_procesoru" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="zakaznik">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="z_first_name" type="xs:string"/>
+        <xs:element name="z_second_name" type="xs:string"/>
+        <xs:element ref="z_address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="z_address">
+    <xs:complexType mixed="true">
+      <xs:attribute name="mesto" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="analiza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="baterie"/>
+        <xs:element ref="system_control"/>
+        <xs:element ref="datove_funkce"/>
+        <xs:element ref="stav_krytu"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="baterie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="b_objem"/>
+        <xs:element ref="b_cas_prumerne_zatizeni"/>
+        <xs:element ref="b_cas_vysoke_zatizeni"/>
+        <xs:element ref="b_cas_nizke_zatizeni"/>
+        <xs:element ref="b_stav"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="b_objem">
+    <xs:complexType mixed="true">
+      <xs:attribute name="correct" type="ok_no" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="b_cas_prumerne_zatizeni">
+    <xs:complexType mixed="true">
+      <xs:attribute name="average" type="zatizeni" use="required"/>
+      <xs:attribute name="max" type="zatizeni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="b_cas_vysoke_zatizeni">
+    <xs:complexType mixed="true">
+      <xs:attribute name="average" type="zatizeni" use="required"/>
+      <xs:attribute name="max" type="zatizeni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="b_cas_nizke_zatizeni">
+    <xs:complexType mixed="true">
+      <xs:attribute name="average" type="zatizeni" use="required"/>
+      <xs:attribute name="max" type="zatizeni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="b_stav">
+    <xs:complexType mixed="true">
+      <xs:attribute name="hodnoceni" type="hodnoceni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="system_control">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="s_verze" type="xs:string"/>
+        <xs:element ref="s_rychlost"/>
+        <xs:element ref="s_teplota_procesoru"/>
+        <xs:element ref="s_stav"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="s_rychlost">
+    <xs:complexType mixed="true">
+      <xs:attribute name="AnTuTu_hodnoceni" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="s_teplota_procesoru">
+    <xs:complexType mixed="true">
+      <xs:attribute name="prehrivani" type="ok_no" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="s_stav">
+    <xs:complexType mixed="true">
+      <xs:attribute name="hodnoceni" type="hodnoceni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="datove_funkce">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="df_GPS_modul"/>
+        <xs:element ref="df_WIFI"/>
+        <xs:element ref="df_Bluetooth"/>
+        <xs:element ref="df_NFC"/>
+        <xs:element ref="df_EDGE"/>
+        <xs:element ref="df_LTE"/>
+        <xs:element ref="df_stav"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_GPS_modul">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_WIFI">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_Bluetooth">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_NFC">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_EDGE">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_LTE">
+    <xs:complexType mixed="true">
+      <xs:attribute name="status" type="on_off" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="df_stav">
+    <xs:complexType mixed="true">
+      <xs:attribute name="hodnoceni" type="hodnoceni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="stav_krytu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sk_displej"/>
+        <xs:element ref="sk_krytu"/>
+        <xs:element ref="sk_kamera"/>
+        <xs:element ref="sk_predni_kamera"/>
+        <xs:element ref="sk_reproduktor"/>
+        <xs:element ref="sk_stav"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_displej">
+    <xs:complexType mixed="true">
+      <xs:attribute name="sk_dobry" type="ok_no" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_krytu">
+    <xs:complexType mixed="true">
+      <xs:attribute name="sk_dobry" type="ok_no" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_kamera">
+    <xs:complexType mixed="true">
+      <xs:attribute name="cistota_zadni" type="kamera" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_predni_kamera">
+    <xs:complexType mixed="true">
+      <xs:attribute name="cistota_front" type="predni_kamera" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_reproduktor">
+    <xs:complexType mixed="true">
+      <xs:attribute name="volume" type="volume" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sk_stav">
+    <xs:complexType mixed="true">
+      <xs:attribute name="hodnoceni" type="hodnoceni" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

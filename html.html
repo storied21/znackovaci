@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dokumentace - mobilni pohotovost</title>
+  </head>
+  <body>
+      <header>
+          <h1>Dokumentace semestralniho projektu</h1>
+          <nav class="main_menu">
+		  <h3>Navigace:</h3>
+              <ul>
+                  <li><a href="#uvod">Uvod</a></li>
+				  <li><a href="#metodika">Metodika</a></li>
+				  <li><a href="#elementyaatributy">Popis elementu a atributu</a></li>
+                  <li><a href="#transformace">Popis transformace</a></li>
+				  <li><a href="#zaver">Zaver</a></li> 
+                  <li><a href="#autor">Autor</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section class="container">
+              <article id="uvod" class="uvod">
+                  <h2>Uvod</h2>
+                  <p>V danem projektu jsem vytvoril xml, ktere se popisuje vlastnosti a funkce telefonu.</p>
+              </article>
+              <article id="metodika" class="metodika">
+                  <h2>Metodika</h2>
+                  <p>Pouzival jsem NetBeans a Notepad++</p>
+				  <p>Vetsinu informaci jsem nasel na strankách W3Schools, validaci jsem provedl pres oficalni validator W3 a pres validtor Freeformatter</p>
+              </article>
+              <article id="elementyaatributy" class="popis_elementu">
+                  <h2>Popis elementu</h2>
+                  <table border="1" id="#elementyaatributy">
+                      <tr>
+                          <td>Nazev</td>
+                          <td>Popis</td>
+                          <td>Type hodnoty</td>
+                      </tr>
+                      <tr>
+                          <td>z_first_name</td>
+                          <td>Jmeno majitele</td>
+                          <td>string</td>
+                      </tr>
+                      <tr>
+                          <td>z_second_name</td>
+                          <td>Prijmeni majitele</td>
+                          <td>string</td>
+                      </tr>
+                      <tr>
+                          <td>b_objem</td>
+                          <td>Porovnava kapacitu baterie s predepsanou kapacitou. Muze nabyvaty hodnot "ok" nebo "no"</td>
+                          <td>ok_no</td>
+                      </tr>
+                      <tr>
+                          <td>sk_displej</td>
+                          <td>Popisuje potrebu vymeny displeje. Muze nabyvaty hodnot "ok" nebo "no"</td>
+                          <td>ok_no</td>
+                      </tr>
+                      <tr>
+                          <td>k_krytu</td>
+                          <td>Popisuje potrebu vymeny krytu. Muze nabyvaty hodnot "ok" nebo "no"</td>
+                          <td>ok_no</td>
+                      </tr>
+                      <tr>
+                          <td>df_GPS_modul</td>
+                          <td>Popisuje dostupnost GPS. Muze nabyvat hodnoty "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>
+                      <tr>
+                          <td>df_WIFI</td>
+                          <td>Popisuje dostupnost WIFI. Muze nabyvat hodnoty "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>
+                      <tr>
+                          <td>df_Bluetooth</td>
+                          <td>Popisuje dostupnost Bluetooth. Muze nabyvaty hodnot "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>
+                      <tr>
+                          <td>df_NFC</td>
+                          <td>Popisuje dostupnost NFC. Muze nabyvat hodnoty "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>  
+                      <tr>
+                          <td>df_EDGE</td>
+                          <td>Popisuje dostupnost EDGE. Muze nabyvat hodnoty "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>   
+                      <tr>
+                          <td>df_LTE</td>
+                          <td>Popisuje dostupnost LTE. Muze nabyvat hodnoty "on" nebo "off"</td>
+                          <td>on_off</td>
+                      </tr>   
+                      <tr>
+                          <td>b_stav</td>
+                          <td>Popisuje stav baterie. Muze nabyvat hodnoty "nefunguje|spatne|stredni|normalne|dobre|super"</td>
+                          <td>hodnoceni</td>
+                      </tr>   
+                      <tr>
+                          <td>s_stav</td>
+                          <td>Popisuje stav systemu. Muze nabyvat hodnoty "nefunguje|spatne|stredni|normalne|dobre|super"</td>
+                          <td>hodnoceni</td>
+                      </tr>   
+                      <tr>
+                          <td>df_stav</td>
+                          <td>Popisuje stav datovych funkce. Muze nabyvat hodnoty "nefunguje|spatne|stredni|normalne|dobre|super"</td>
+                          <td>hodnoceni</td>
+                      </tr>   
+                      <tr>
+                          <td>sk_stav</td>
+                          <td>Popisuje stav krytu. Muze nabyvat hodnoty "nefunguje|spatne|stredni|normalne|dobre|super"</td>
+                          <td>hodnoceni</td>
+                      </tr>   
+                      <tr>
+                          <td>sk_reproduktor</td>
+                          <td>Popisuje hlasitost reproduktoru</td>
+                          <td>volume</td>
+                      </tr>   
+                      <tr>
+                          <td>b_cas_prumerne_zatizeni</td>
+                          <td>Popisuje zivotnost baterie pri prumnerne zatizeni</td>
+                          <td>zatizeni</td>
+                      </tr> 
+                      <tr>
+                          <td>b_cas_vysoke_zatizeni</td>
+                          <td>Popisuje zivotnost baterie pri vysoke zatizeni</td>
+                          <td>zatizeni</td>
+                      </tr> 
+                      <tr>
+                          <td>b_cas_nizke_zatizeni</td>
+                          <td>Popisuje zivotnost baterie pri nizke zatizeni</td>
+                          <td>zatizeni</td>
+                      </tr>   
+                      <tr>
+                          <td>z_address</td>
+                          <td>Popisuje misto pobytu zakaznika</td>
+                          <td>mesto</td>
+                      </tr>   
+                      <tr>
+                          <td>konecne_hodnoceni</td>
+                          <td>Popisuje stav telefonu</td>
+                          <td>int</td>
+                      </tr>   
+                      <tr>
+                          <td>prehrivani</td>
+                          <td>Popisuje dostupnost prehrivani cpu</td>
+                          <td>ok_no</td>
+                      </tr>   
+                      <tr>
+                          <td>sk_kamera</td>
+                          <td>Popisuje stav zadni kamery</td>
+                          <td>kamera</td>
+                      </tr>
+                      <tr>
+                          <td>sk_predni_kamera</td>
+                          <td>Popisuje stav predni kamery</td>
+                          <td>predni_kamera</td>
+                      </tr> 
+                      <tr>
+                          <td>s_rychlost</td>
+                          <td>Hodnoti se rychlost systemu</td>
+                          <td>AnTuTu_hodnoceni</td>
+                      </tr> 
+                      <tr>
+                          <td>m_nazev</td>
+                          <td>Hodnota typu "string" rika nazevu a modelu telefonu</td>
+                          <td>string</td>
+                      </tr> 
+                      <tr>
+                          <td>m_rok</td>
+                          <td>Hodnota typu "integer" rika roku vyroby telefonu</td>
+                          <td>int</td>
+                      </tr> 
+                      <tr>
+                          <td>m_barva</td>
+                          <td>Hodnota typu "string" rika barve telefonu</td>
+                          <td>string</td>
+                      </tr> 
+                      <tr>
+                          <td>m_vaha</td>
+                          <td>Hodnota typu "integer" urcuje hmotnost telefonu</td>
+                          <td>int</td>
+                      </tr> 
+                      <tr>
+                          <td>s_verze</td>
+                          <td>Hodnota typu "string" popisuje verzi operacniho systemu pouzivaneho na telefonu</td>
+                          <td>string</td>
+                      </tr> 
+            
+                  </table>
+              </article>
+              <article id="transformace" class="transformation">
+                  <h2>Popis transformace</h2>
+                  <p>XML se transformuje do JSON pomoci cyklu for-each a rika o nutnosti vymeny nekterych dilu.</p>
+              </article>
+              <article class="ending" id="zaver">
+                  <h2>Zaver</h2>
+                  <p>Pri tvorbe teto prace jsem si poprve v zivote vyzkousel pracovat s jazykem XML. Pomoci techto dokumentu prcovnik "Mobilni pohotovost" muze dostat komplektnou informaci o
+				  telefonu zakaznika a majitel muzet zjistit stav telefonu 
+				  </p>
+              </article>
+          </section>
+      </main>
+      <footer>
+          <section id="autor" class="autor">
+              <h2>Autor</h2>
+              <p>Ceska Zemedelska Univerzita<br/>
+              Provozni Ekonomicka Fakulta<br/>
+              Informatika<br/>
+              Egor Ploskov<br/> 
+              26.04.2017</p>
+          </section>
+      </footer>
+  </body>
+</html>

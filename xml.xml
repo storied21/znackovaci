@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mobilni_pohotovost>
+    <owner>
+        <id>1</id>
+        <mobil>
+            <m_nazev>LG D821 Nexus 5</m_nazev>
+            <m_rok>2013</m_rok>
+            <m_barva>black</m_barva>
+            <m_vaha>130</m_vaha>
+            <m_rozliseni_displeje>1920 x 1080</m_rozliseni_displeje>
+            <m_velikost_displeje>5</m_velikost_displeje>
+            <m_RAM>2048</m_RAM>
+            <m_kamera>8 Mpix</m_kamera>
+            <m_frekvence_procesoru>2.26 GHz</m_frekvence_procesoru>
+            <m_jader_procesoru>4</m_jader_procesoru>
+        </mobil>
+        <zakaznik>
+            <z_first_name>Pavel</z_first_name>
+            <z_second_name>Pav</z_second_name>
+            <z_address mesto="Praha">Praha 13000</z_address>
+        </zakaznik>
+        <analiza>
+            <baterie>
+                <b_objem correct="no">2000</b_objem>
+                <b_cas_prumerne_zatizeni max="50" average="25">15</b_cas_prumerne_zatizeni>
+                <b_cas_vysoke_zatizeni max="20" average="13">2</b_cas_vysoke_zatizeni>
+                <b_cas_nizke_zatizeni max="300" average="280">280</b_cas_nizke_zatizeni>
+                <b_stav hodnoceni="spatne">3</b_stav>
+            </baterie>
+            <system_control>
+                <s_verze>Android 4.4, Kitkat</s_verze>
+                <s_rychlost AnTuTu_hodnoceni="50000">ne</s_rychlost>
+                <s_teplota_procesoru prehrivani="no">ok</s_teplota_procesoru>
+                <s_stav hodnoceni="normalne">7</s_stav>   
+            </system_control>
+            <datove_funkce>
+                <df_GPS_modul status="on">ok</df_GPS_modul>
+                <df_WIFI status="on">ok</df_WIFI>
+                <df_Bluetooth status="on">ok</df_Bluetooth>
+                <df_NFC status="on">ok</df_NFC>
+                <df_EDGE status="on">ok</df_EDGE>
+                <df_LTE status="on">ok</df_LTE>
+                <df_stav hodnoceni="super">10</df_stav>
+            </datove_funkce>
+            <stav_krytu>
+                <sk_displej sk_dobry="ok">ok</sk_displej>
+                <sk_krytu sk_dobry="ok">ok</sk_krytu>
+                <sk_kamera cistota_zadni="90">ok</sk_kamera>
+                <sk_predni_kamera cistota_front="90">no</sk_predni_kamera>
+                <sk_reproduktor volume="70">ok</sk_reproduktor>
+                <sk_stav hodnoceni="stredni">5</sk_stav>
+            </stav_krytu>
+        </analiza>
+        <konecne_hodnoceni>1</konecne_hodnoceni>
+    </owner>
+
+    <owner>
+        <id>2</id>
+        <mobil>
+            <m_nazev>Apple iPhone 7</m_nazev>
+            <m_rok>2016</m_rok>
+            <m_barva>gold</m_barva>
+            <m_vaha>138</m_vaha>
+            <m_rozliseni_displeje>1334 х 750</m_rozliseni_displeje>
+            <m_velikost_displeje>4.7</m_velikost_displeje>
+            <m_RAM>2048</m_RAM>
+            <m_kamera>12 Mpix</m_kamera>
+            <m_frekvence_procesoru>2.37 GHz</m_frekvence_procesoru>
+            <m_jader_procesoru>4</m_jader_procesoru>
+        </mobil>
+        <zakaznik>
+            <z_first_name>Sara</z_first_name>
+            <z_second_name>Stara</z_second_name>
+            <z_address mesto="Praha">Praha 12000</z_address>
+        </zakaznik>
+        <analiza>
+            <baterie>
+                <b_objem correct="ok">1960</b_objem>
+                <b_cas_prumerne_zatizeni max="100" average="70">70</b_cas_prumerne_zatizeni>
+                <b_cas_vysoke_zatizeni max="14" average="12">12</b_cas_vysoke_zatizeni>
+                <b_cas_nizke_zatizeni max="240" average="200">280</b_cas_nizke_zatizeni>
+                <b_stav hodnoceni="super">9</b_stav>
+            </baterie>
+            <system_control>
+                <s_verze>iOS 10</s_verze>
+                <s_rychlost AnTuTu_hodnoceni="60500">ok</s_rychlost>
+                <s_teplota_procesoru prehrivani="no">ok</s_teplota_procesoru>
+                <s_stav hodnoceni="super">9</s_stav>   
+            </system_control>
+            <datove_funkce>
+                <df_GPS_modul status="on">ok</df_GPS_modul>
+                <df_WIFI status="on">ok</df_WIFI>
+                <df_Bluetooth status="on">ok</df_Bluetooth>
+                <df_NFC status="on">ok</df_NFC>
+                <df_EDGE status="on">ok</df_EDGE>
+                <df_LTE status="on">ok</df_LTE>
+                <df_stav hodnoceni="super">10</df_stav>
+            </datove_funkce>
+            <stav_krytu>
+                <sk_displej sk_dobry="ok">ok</sk_displej>
+                <sk_krytu sk_dobry="ok">ok</sk_krytu>
+                <sk_kamera cistota_zadni="90">ok</sk_kamera>
+                <sk_predni_kamera cistota_front="90">ok</sk_predni_kamera>
+                <sk_reproduktor volume="70">ok</sk_reproduktor>
+                <sk_stav hodnoceni="super">9</sk_stav>
+            </stav_krytu>
+        </analiza>
+        <konecne_hodnoceni>1</konecne_hodnoceni>
+    </owner>
+
+    <owner>
+        <id>3</id>
+        <mobil>
+            <m_nazev>Lenovo Vibe S1 Lite</m_nazev>
+            <m_rok>2016</m_rok>
+            <m_barva>blue</m_barva>
+            <m_vaha>129</m_vaha>
+            <m_rozliseni_displeje>1920 х 1080</m_rozliseni_displeje>
+            <m_velikost_displeje>5</m_velikost_displeje>
+            <m_RAM>2048</m_RAM>
+            <m_kamera>13 Mpix</m_kamera>
+            <m_frekvence_procesoru>1.3 GHz</m_frekvence_procesoru>
+            <m_jader_procesoru>8</m_jader_procesoru>
+        </mobil>
+        <zakaznik>
+            <z_first_name>Dominik</z_first_name>
+            <z_second_name>Otto</z_second_name>
+            <z_address mesto="Brno">Brno 22000</z_address>
+        </zakaznik>
+        <analiza>
+            <baterie>
+                <b_objem correct="no">0</b_objem>
+                <b_cas_prumerne_zatizeni max="100" average="70">0</b_cas_prumerne_zatizeni>
+                <b_cas_vysoke_zatizeni max="14" average="12">0</b_cas_vysoke_zatizeni>
+                <b_cas_nizke_zatizeni max="240" average="200">0</b_cas_nizke_zatizeni>
+                <b_stav hodnoceni="nefunguje">0</b_stav>
+            </baterie>
+            <system_control>
+                <s_verze>Android 4.4, Kitkat</s_verze>
+                <s_rychlost AnTuTu_hodnoceni="15500">ok</s_rychlost>
+                <s_teplota_procesoru prehrivani="no">ok</s_teplota_procesoru>
+                <s_stav hodnoceni="dobre">8</s_stav>   
+            </system_control>
+            <datove_funkce>
+                <df_GPS_modul status="on">ok</df_GPS_modul>
+                <df_WIFI status="on">ok</df_WIFI>
+                <df_Bluetooth status="on">ok</df_Bluetooth>
+                <df_NFC status="on">ok</df_NFC>
+                <df_EDGE status="on">ok</df_EDGE>
+                <df_LTE status="on">ok</df_LTE>
+                <df_stav hodnoceni="super">10</df_stav>
+            </datove_funkce>
+            <stav_krytu>
+                <sk_displej sk_dobry="ok">ok</sk_displej>
+                <sk_krytu sk_dobry="ok">ok</sk_krytu>
+                <sk_kamera cistota_zadni="90">ok</sk_kamera>
+                <sk_predni_kamera cistota_front="90">ok</sk_predni_kamera>
+                <sk_reproduktor volume="70">ok</sk_reproduktor>
+                <sk_stav hodnoceni="super">9</sk_stav>
+            </stav_krytu>
+        </analiza>
+        <konecne_hodnoceni>0</konecne_hodnoceni>
+    </owner>
+
+    <owner>
+        <id>4</id>
+        <mobil>
+            <m_nazev>Samsung SM-G928 Galaxy S6 edge+</m_nazev>
+            <m_rok>2015</m_rok>
+            <m_barva>black</m_barva>
+            <m_vaha>156</m_vaha>
+            <m_rozliseni_displeje>2560 x 1440</m_rozliseni_displeje>
+            <m_velikost_displeje>5.7</m_velikost_displeje>
+            <m_RAM>4092</m_RAM>
+            <m_kamera>16 Mpix</m_kamera>
+            <m_frekvence_procesoru>2.1 GHz</m_frekvence_procesoru>
+            <m_jader_procesoru>8</m_jader_procesoru>
+        </mobil>
+        <zakaznik>
+            <z_first_name>Ondrej</z_first_name>
+            <z_second_name>Cisler</z_second_name>
+            <z_address mesto="Praha">Praha 12000</z_address>
+        </zakaznik>
+        <analiza>
+            <baterie>
+                <b_objem correct="ok">3000</b_objem>
+                <b_cas_prumerne_zatizeni max="200" average="150">140</b_cas_prumerne_zatizeni>
+                <b_cas_vysoke_zatizeni max="28" average="20">18</b_cas_vysoke_zatizeni>
+                <b_cas_nizke_zatizeni max="336" average="300">300</b_cas_nizke_zatizeni>
+                <b_stav hodnoceni="dobre">7</b_stav>
+            </baterie>
+            <system_control>
+                <s_verze>Android 5.1 Lollipop</s_verze>
+                <s_rychlost AnTuTu_hodnoceni="65500">ok</s_rychlost>
+                <s_teplota_procesoru prehrivani="no">no</s_teplota_procesoru>
+                <s_stav hodnoceni="dobre">8</s_stav>   
+            </system_control>
+            <datove_funkce>
+                <df_GPS_modul status="on">ok</df_GPS_modul>
+                <df_WIFI status="on">ok</df_WIFI>
+                <df_Bluetooth status="on">ok</df_Bluetooth>
+                <df_NFC status="on">ok</df_NFC>
+                <df_EDGE status="on">ok</df_EDGE>
+                <df_LTE status="on">ok</df_LTE>
+                <df_stav hodnoceni="super">10</df_stav>
+            </datove_funkce>
+            <stav_krytu>
+                <sk_displej sk_dobry="ok">ok</sk_displej>
+                <sk_krytu sk_dobry="ok">ok</sk_krytu>
+                <sk_kamera cistota_zadni="0">no</sk_kamera>
+                <sk_predni_kamera cistota_front="100">ok</sk_predni_kamera>
+                <sk_reproduktor volume="90">ok</sk_reproduktor>
+                <sk_stav hodnoceni="spatne">3</sk_stav>
+            </stav_krytu>
+        </analiza>
+         <konecne_hodnoceni>0</konecne_hodnoceni>
+    </owner>
+
+    <owner>
+        <id>5</id>
+        <mobil>
+            <m_nazev>Xiaomi mi MAX</m_nazev>
+            <m_rok>2016</m_rok>
+            <m_barva>white</m_barva>
+            <m_vaha>203</m_vaha>
+            <m_rozliseni_displeje>1920 х 1080</m_rozliseni_displeje>
+            <m_velikost_displeje>6.4</m_velikost_displeje>
+            <m_RAM>3000</m_RAM>
+            <m_kamera>16 Mpix</m_kamera>
+            <m_frekvence_procesoru>1.8 GHz</m_frekvence_procesoru>
+            <m_jader_procesoru>6</m_jader_procesoru>
+        </mobil>
+        <zakaznik>
+            <z_first_name>Lukas</z_first_name>
+            <z_second_name>Rotbauer</z_second_name>
+            <z_address mesto="Praha">Praha 16000</z_address>
+        </zakaznik>
+        <analiza>
+            <baterie>
+                <b_objem correct="ok">4850</b_objem>
+                <b_cas_prumerne_zatizeni max="100" average="80">80</b_cas_prumerne_zatizeni>
+                <b_cas_vysoke_zatizeni max="14" average="12">10</b_cas_vysoke_zatizeni>
+                <b_cas_nizke_zatizeni max="200" average="150">160</b_cas_nizke_zatizeni>
+                <b_stav hodnoceni="stredni">6</b_stav>
+            </baterie>
+            <system_control>
+                <s_verze>Android 5.1 Lollipop</s_verze>
+                <s_rychlost AnTuTu_hodnoceni="55500">ok</s_rychlost>
+                <s_teplota_procesoru prehrivani="no">no</s_teplota_procesoru>
+                <s_stav hodnoceni="dobre">8</s_stav>   
+            </system_control>
+            <datove_funkce>
+                <df_GPS_modul status="on">ok</df_GPS_modul>
+                <df_WIFI status="on">ok</df_WIFI>
+                <df_Bluetooth status="on">ok</df_Bluetooth>
+                <df_NFC status="on">ok</df_NFC>
+                <df_EDGE status="on">ok</df_EDGE>
+                <df_LTE status="on">ok</df_LTE>
+                <df_stav hodnoceni="super">10</df_stav>
+            </datove_funkce>
+            <stav_krytu>
+                <sk_displej sk_dobry="no">no</sk_displej>
+                <sk_krytu sk_dobry="no">no</sk_krytu>
+                <sk_kamera cistota_zadni="0">no</sk_kamera>
+                <sk_predni_kamera cistota_front="100">ok</sk_predni_kamera>
+                <sk_reproduktor volume="90">ok</sk_reproduktor>
+                <sk_stav hodnoceni="stredni">5</sk_stav>
+            </stav_krytu>
+        </analiza>
+        <konecne_hodnoceni>1</konecne_hodnoceni>
+    </owner>
+</mobilni_pohotovost>
